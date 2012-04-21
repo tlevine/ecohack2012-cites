@@ -1,4 +1,4 @@
-create table cites (
+CREATE TABLE cites (
   appendix INTEGER,
   cites_taxon_code INTEGER,
   approved_taxon_code INTEGER,
@@ -17,5 +17,11 @@ create table cites (
   shipment_year INTEGER,
   global_trade INTEGER
 );
+
+CREATE INDEX cites_name ON cites(cites_name);
+CREATE INDEX term_code_1 ON cites(term_code_1);
+CREATE INDEX taxon_family ON cites(taxon_family);
+CREATE INDEX shipment_year ON cites(shipment_year);
+
 .separator "|"
 .import cites_trade_export.csv cites
