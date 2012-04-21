@@ -5,6 +5,10 @@ cites_trade_export.csv
 *.zip
 *.csv
 *.tgz
+
+# Database
 *.db
+*-journal
+*.csvn # Dunno what this is
 
 *.sw[op]
