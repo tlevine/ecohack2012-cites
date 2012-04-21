@@ -36,3 +36,11 @@ by_taxon_and_country <- function(){
 find_huge_changes <- function(by_taxon_and_country.df){
   by_taxon_and_country.df
 }
+
+
+pdf('changes.pdf')
+plot( (abs(change_since_last_year)/export) ~ shipment_year, col = '#00000088', data = subset(changes, shipment_year < 2005), type = 'n', main ='Absolute changes since the previous year')
+text( changes$shipment_year, abs(changes$change_since_last_year)/changes$export, paste(changes$export_country_code, changes$taxon_family))
+dev.off()
+history()
+
