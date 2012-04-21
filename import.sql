@@ -13,7 +13,7 @@ CREATE TABLE cites (
   purpose_code TEXT,
   source_code TEXT,
   reporter_type TEXT,
-  shipment_number INTEGER,
+  shipment_number INTEGER PRIMARY KEY,
   shipment_year INTEGER,
   global_trade INTEGER
 );
