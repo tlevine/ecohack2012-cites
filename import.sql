@@ -1,8 +1,9 @@
 create table cites (
+  appendix INTEGER,
   cites_taxon_code INTEGER,
   approved_taxon_code INTEGER,
   cites_name TEXT,
-  export_country_code TEXT
+  export_country_code TEXT,
   import_country_code TEXT,
   origin_country_code TEXT,
   quantity_1 INTEGER,
@@ -17,4 +18,4 @@ create table cites (
   global_trade INTEGER
 );
 .separator "|"
-.import cites_trade_export.csv test
+.import cites_trade_export.csv cites
