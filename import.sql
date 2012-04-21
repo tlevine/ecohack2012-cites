@@ -6,7 +6,7 @@ CREATE TABLE cites (
   export_country_code TEXT,
   import_country_code TEXT,
   origin_country_code TEXT,
-  quantity_1 INTEGER,
+  quantity_1 REAL,
   term_code_1 TEXT,
   unit_code_1 TEXT,
   taxon_family TEXT,
