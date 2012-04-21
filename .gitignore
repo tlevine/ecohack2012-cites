@@ -1,3 +1,9 @@
 cites_trade_export.csv.zip
 cites_trade_export.csv
+
+# Data
+*.zip
+*.csv
+*.tgz
+
 *.sw[op]
