@@ -24,4 +24,4 @@ CREATE INDEX taxon_family ON cites(taxon_family);
 CREATE INDEX shipment_year ON cites(shipment_year);
 
 .separator "|"
-.import cites_trade_export.csv cites
+.import cites_trade_export-cleaned.csv cites
